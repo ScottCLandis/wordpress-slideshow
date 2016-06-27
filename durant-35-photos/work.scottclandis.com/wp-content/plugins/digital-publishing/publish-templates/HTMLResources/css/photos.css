@@ -1,0 +1,150 @@
+@font-face {
+    font-family: gothamCondensed;
+    src: url("http://work.scottclandis.com/wp-content/plugins/digital-publishing/publish-templates/HTMLResources/fonts/GothamCondensed-Book.otf");
+}
+
+body {
+    font-family: gothamCondensed;
+    font-size: 16px;
+}
+
+@media (min-width:768px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+a:link {
+    color: #00adef;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #00adef;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #00adef;
+    text-decoration: none;
+}
+
+
+/* selected link */
+
+a:active {
+    color: #00adef;
+    text-decoration: none;
+}
+
+.slideshow img {
+    width: 100%;
+}
+
+#close {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: right;
+    z-index: 2001;
+}
+
+.resize-tall {
+    height: 100%;
+}
+
+.slideshow {
+    height: 88vh;
+    overflow: hidden;
+}
+
+.slide-counter {
+    color: #00adef;
+    font-size: 2.5em;
+    padding-right: 5vw;
+    width: 20vw;
+    text-align: right;
+}
+
+.vcenter {position: relative;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);}
+
+.captions {
+    padding: 0.6em 30px 0 30px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+footer {height: 15vh;
+background-color: rgb(24, 50, 87);
+position: fixed;
+bottom: 0;
+width: 100%;
+color: #fff;
+padding: 0;
+}
+
+@media (min-width:768px) {
+    footer {
+        height: 10vh;
+    }
+    
+    .slideshow {
+        height: 90vh;
+    }
+}
+
+.slick-prev,
+slick-next {
+    z-index: 5;
+}
+
+.slick-prev {
+    left: 4%;
+}
+
+.slick-next {
+    right: 4%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.slick-prev:after {
+    content: url("../images/left-arrow.png");
+    font-size: 30px;
+}
+
+.slick-next:before {
+    content: url("../images/right-arrow.png");
+    font-size: 30px;
+}
+
+body.fullscreen {
+ overflow: hidden;
+}
+.landscape {
+ -webkit-transform: rotate(90deg);
+ transform: rotate(90deg);
+ background: #000;
+ width: 100vh;
+ height: 100vw;
+ position: fixed;
+ z-index: 3000;
+ top: 0;
+ left: 0;
+}
